@@ -1,0 +1,5 @@
+1) teste dessa classe (que eu nao testei)
+2) ler/parsear varios arquivos
+3) colocar em um banco de dados
+4) formatar os campos numericos
+5) comecar a pensar nos algoritmos para gerar as curvas.
