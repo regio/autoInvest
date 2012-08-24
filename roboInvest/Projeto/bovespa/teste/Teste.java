@@ -1,10 +1,8 @@
 package teste;
 
-import java.awt.List;
 import java.util.ArrayList;
 
 import model.Papel;
-
 import parser.BDINParser;
 import parser.BovespaParserException;
 

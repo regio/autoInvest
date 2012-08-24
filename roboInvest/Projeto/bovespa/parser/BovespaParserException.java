@@ -1,4 +1,4 @@
-package bovespa.parser;
+package parser;
 
 public class BovespaParserException extends Exception {
     

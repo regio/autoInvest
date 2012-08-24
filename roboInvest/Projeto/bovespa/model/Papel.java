@@ -5,145 +5,134 @@ public class Papel {
 
     /*tipoRegistro*/
 	public static int TIPREG_INI = 01 - 1;
-	public static int TIPREG_END = 02 - 1;
+	public static int TIPREG_END = 02;
     private String tipReg;
 
     /*dataPregao*/
 	public static int DATPRE_INI = 03 - 1;
-	public static int DATPRE_END = 10 - 1;        
+	public static int DATPRE_END = 10;        
     private String datPre;    
     
     /*codigoBDI*/
 	public static int CODBDI_INI = 11 - 1;
-	public static int CODBDI_END = 12 - 1;    
+	public static int CODBDI_END = 12;    
     private String codBDI;
     
     /*codigoNegociacao*/
 	public static int CODNEG_INI = 13 - 1;
-	public static int CODNEG_END = 24 - 1;    
+	public static int CODNEG_END = 24;    
     private String codNeg;
     
     /*tipoMercadoria*/
 	public static int TPMERC_INI = 25 - 1;
-	public static int TPMERC_END = 27 - 1;        
+	public static int TPMERC_END = 27;        
     private String tpMerc;
 
     /*nomeRes???*/
 	public static int NOMRES_INI = 28 - 1;
-	public static int NOMRES_END = 39 - 1;            
+	public static int NOMRES_END = 39;            
     private String nomRes;
 
     /*especi???*/
 	public static int ESPECI_INI = 40 - 1;
-	public static int ESPECI_END = 49 - 1;                
+	public static int ESPECI_END = 49;                
     private String especi;
     
     /*prazoTermino*/
 	public static int PRAZOT_INI = 50 - 1;
-	public static int PRAZOT_END = 52 - 1;    
+	public static int PRAZOT_END = 52;    
     private String prazot;
 
     /*moeda Referencia*/
 	public static int MODREF_INI = 53 - 1;
-	public static int MODREF_END = 56 - 1;        
+	public static int MODREF_END = 56;        
     private String modref;
 
     /*precoAbertura*/
 	public static int PREABE_INI = 57 - 1;
-	public static int PREABE_END = 69 - 1;            
+	public static int PREABE_END = 69;            
     private String preAbe;
 
     /*precoMaximo*/
 	public static int PREMAX_INI = 70 - 1;
-	public static int PREMAX_END = 82 - 1;                
+	public static int PREMAX_END = 82;                
     private String preMax;
 
     /*precoMinimo*/
 	public static int PREMIN_INI = 83 - 1;
-	public static int PREMIN_END = 95 - 1;                    
+	public static int PREMIN_END = 95;                    
     private String preMin;
 
     /*precoMedio*/
 	public static int PREMED_INI = 96 - 1;
-	public static int PREMED_END = 108 - 1;                        
+	public static int PREMED_END = 108;                        
     private String preMed;
 
     /*preUl???*/
 	public static int PREULT_INI = 109 - 1;
-	public static int PREULT_END = 121 - 1;    
+	public static int PREULT_END = 121;    
     private String preUlt;
 
     /*preUl???*/
 	public static int PREOFC_INI = 122 - 1;
-	public static int PREOFC_END = 134 - 1;        
+	public static int PREOFC_END = 134;        
     private String preOfc;
 
     /*preUl???*/
 	public static int PREOFV_INI = 135 - 1;
-	public static int PREOFV_END = 147 - 1;            
+	public static int PREOFV_END = 147;            
     private String preOfv;
     
     /*preUl???*/
 	public static int TOTNEG_INI = 148 - 1;
-	public static int TOTNEG_END = 152 - 1;    
+	public static int TOTNEG_END = 152;    
     private String totNeg;    
 
     /*preUl???*/
 	public static int QUATOT_INI = 153 - 1;
-	public static int QUATOT_END = 170 - 1;        
+	public static int QUATOT_END = 170;        
     private String quaTot;
 
     /*preUl???*/
 	public static int VOLTOT_INI = 171 - 1;
-	public static int VOLTOT_END = 188 - 1;        
+	public static int VOLTOT_END = 188;        
     private String volTot;
 
     /*preUl???*/
 	public static int PREEXE_INI = 189 - 1;
-	public static int PREEXE_END = 201 - 1;            
+	public static int PREEXE_END = 201;            
     private String preExe;    
 
     /*preUl???*/
 	public static int INDOPC_INI = 202 - 1;
-	public static int INDOPC_END = 202 - 1;    
+	public static int INDOPC_END = 202;    
     private String indOpc;
     
     /*preUl???*/
 	public static int DATVEN_INI = 203 - 1;
-	public static int DATVEN_END = 210 - 1;    
+	public static int DATVEN_END = 210;    
     private String datVen;
 
     /*preUl???*/
 	public static int FATCOT_INI = 211 - 1;
-	public static int FATCOT_END = 217 - 1;        
+	public static int FATCOT_END = 217;        
     private String fatCot;
 
     /*preUl???*/
 	public static int PTOEXE_INI = 218 - 1;
-	public static int PTOEXE_END = 230 - 1;        
+	public static int PTOEXE_END = 230;        
     private String ptoExe;
     
     /*preUl???*/
 	public static int CODISI_INI = 231 - 1;
-	public static int CODISI_END = 242 - 1;
+	public static int CODISI_END = 242;
     private String codIsi;
     
     /*preUl???*/
 	public static int DISMES_INI = 243 - 1;
-	public static int DISMES_END = 245 - 1;    
+	public static int DISMES_END = 245;    
     private String disMes;    
     
-    
-    
-    
-    /*descricao do codigo BDI*/
-    private String desBDI;
-    /*indicador de caracteristica do papel*/
-    private String indcar;
-        
-    /*descricao do tipo de mercado*/
-    private String nomeRc;
-
     private boolean papelValido;
     
     
@@ -593,23 +582,5 @@ public class Papel {
     }
     public boolean getPapelValido() {
         return papelValido;
-    }
-    public void setDesBDI(String desBDI) {
-        this.desBDI = desBDI;
-    }
-    public String getDesBDI() {
-        return desBDI;
-    }
-    public void setIndcar(String indcar) {
-        this.indcar = indcar;
-    }
-    public String getIndcar() {
-        return indcar;
-    }
-    public void setNomeRc(String nomeRc) {
-        this.nomeRc = nomeRc;
-    }
-    public String getNomeRc() {
-        return nomeRc;
     }
 }

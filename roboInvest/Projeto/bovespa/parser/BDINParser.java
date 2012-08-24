@@ -21,7 +21,7 @@ public class BDINParser {
     public List<Papel> execute() throws BovespaParserException {
         List<Papel> listaPapeisDaBovespa = new ArrayList<Papel>();
         try {
-            FileInputStream fileInputStream = new FileInputStream("./COTAHIST_A2012.TXT");
+            FileInputStream fileInputStream = new FileInputStream("./res/COTAHIST_A2012.TXT");
             DataInputStream dis = new DataInputStream(fileInputStream);
             BufferedReader br = new BufferedReader(new InputStreamReader(dis));
 
@@ -54,36 +54,36 @@ public class BDINParser {
             papel.setDatPre(strLine.substring(Papel.DATPRE_INI,Papel.DATPRE_END));                        
             papel.setCodBDI(strLine.substring(Papel.CODBDI_INI,Papel.CODBDI_END));
             papel.setCodNeg(strLine.substring(Papel.CODNEG_INI,Papel.CODNEG_END));
-            papel.setTpMerc(strLine.substring(24,26));
-            papel.setNomRes(strLine.substring(27,38));
-            papel.setEspeci(strLine.substring(39,48));
-            papel.setPrazot(strLine.substring(49,51));
-            papel.setModref(strLine.substring(52,55));
+            papel.setTpMerc(strLine.substring(Papel.TPMERC_INI,Papel.TPMERC_END));
+            papel.setNomRes(strLine.substring(Papel.NOMRES_INI,Papel.NOMRES_END));
+            papel.setEspeci(strLine.substring(Papel.ESPECI_INI,Papel.ESPECI_END));
+            papel.setPrazot(strLine.substring(Papel.PRAZOT_INI,Papel.PRAZOT_END));
+            papel.setModref(strLine.substring(Papel.MODREF_INI,Papel.MODREF_END));
 
-            papel.setPreAbe(strLine.substring(56,68));
-            papel.setPreMax(strLine.substring(69,81));
-            papel.setPreMin(strLine.substring(82,94));
-            papel.setPreMed(strLine.substring(95,107));
-            papel.setPreUlt(strLine.substring(108,120));
+            papel.setPreAbe(strLine.substring(Papel.PREABE_INI,Papel.PREABE_END));
+            papel.setPreMax(strLine.substring(Papel.PREMAX_INI,Papel.PREMAX_END));
+            papel.setPreMin(strLine.substring(Papel.PREMIN_INI,Papel.PREMIN_END));
+            papel.setPreMed(strLine.substring(Papel.PREMED_INI,Papel.PREMED_END));
+            papel.setPreUlt(strLine.substring(Papel.PREULT_INI,Papel.PREULT_END));
 
             // SINOSC - sinal da oscilação do preco do papel-mercado em relacao ao pregao anterior (145)
             // OSCILA - oscilacao do preco do papel-mercado em relacao ao pregao anterior (146-150)
-            papel.setPreOfc(strLine.substring(121,133));
-            papel.setPreOfv(strLine.substring(134,146));
-            papel.setTotNeg(strLine.substring(147,151));
-            papel.setQuaTot(strLine.substring(152,169));
-            papel.setVolTot(strLine.substring(170,187));
+            papel.setPreOfc(strLine.substring(Papel.PREOFC_INI,Papel.PREOFC_END));
+            papel.setPreOfv(strLine.substring(Papel.PREOFV_INI,Papel.PREOFV_END));
+            papel.setTotNeg(strLine.substring(Papel.TOTNEG_INI,Papel.TOTNEG_END));
+            papel.setQuaTot(strLine.substring(Papel.QUATOT_INI,Papel.QUATOT_END));
+            papel.setVolTot(strLine.substring(Papel.VOLTOT_INI,Papel.VOLTOT_END));
             
             
-            papel.setPreExe(strLine.substring(188,200));
+            papel.setPreExe(strLine.substring(Papel.PREEXE_INI,Papel.PREEXE_END));
             
-            papel.setIndOpc(strLine.substring(201,201));
-            papel.setDatVen(strLine.substring(202,209));
-            papel.setFatCot(strLine.substring(210,216));
+            papel.setIndOpc(strLine.substring(Papel.INDOPC_INI,Papel.INDOPC_END));
+            papel.setDatVen(strLine.substring(Papel.DATVEN_INI,Papel.DATVEN_END));
+            papel.setFatCot(strLine.substring(Papel.FATCOT_INI,Papel.FATCOT_END));
 
-            papel.setPtoExe(strLine.substring(217,229));
-            papel.setCodIsi(strLine.substring(230,241));
-            papel.setDisMes(strLine.substring(242,244));
+            papel.setPtoExe(strLine.substring(Papel.PTOEXE_INI,Papel.PTOEXE_END));
+            papel.setCodIsi(strLine.substring(Papel.CODISI_INI,Papel.CODISI_END));
+            papel.setDisMes(strLine.substring(Papel.DISMES_INI,Papel.DISMES_END));
             // END OF THE MAGIC
             
             papel.setPapelValido(true);
