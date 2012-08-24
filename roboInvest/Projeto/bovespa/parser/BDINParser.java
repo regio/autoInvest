@@ -50,10 +50,10 @@ public class BDINParser {
         
         try {
             // START OF THE MAGIC
-            papel.setTipReg(strLine.substring(0,1));
-            papel.setDatPre(strLine.substring(2,9));                        
-            papel.setCodBDI(strLine.substring(10,11));
-            papel.setCodNeg(strLine.substring(12,23));
+            papel.setTipReg(strLine.substring(Papel.TIPREG_INI,Papel.TIPREG_END));
+            papel.setDatPre(strLine.substring(Papel.DATPRE_INI,Papel.DATPRE_END));                        
+            papel.setCodBDI(strLine.substring(Papel.CODBDI_INI,Papel.CODBDI_END));
+            papel.setCodNeg(strLine.substring(Papel.CODNEG_INI,Papel.CODNEG_END));
             papel.setTpMerc(strLine.substring(24,26));
             papel.setNomRes(strLine.substring(27,38));
             papel.setEspeci(strLine.substring(39,48));
